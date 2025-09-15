@@ -1,0 +1,71 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+  .v-checkbox {
+    --v-input-control-height: 32px;
+  }
+  .v-checkbox .v-input__details {
+    display: none;
+  }
+
+.v-infinite-scroll--vertical {
+  overflow: hidden;
+}
+
+.card-carousel > .v-window__container {
+  height: 100% !important;
+}
+
+.hotels-tool-bar .v-toolbar__content{
+  height: fit-content !important;
+}
+
+.v-input__details{
+    display: none !important;
+}
+
+.hotels-tool-bar .v-toolbar-title {
+  margin: 0 !important;
+}
+
+.v-expansion-panel-text__wrapper {
+  padding: 8px 24px 8px !important;
+}
+.v-expansion-panel-title {
+  padding: 12px 24px !important;
+}
+
+.v-infinite-scroll__side div {
+  color: #CFD8DC !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light track */
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #f1f1f1; /* Light track */
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: linear-gradient(180deg, #021b79, #0575e6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #021b79, #0575e6);
+}

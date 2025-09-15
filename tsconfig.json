@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "target": "es2022",
+    "lib": ["es2022", "esnext", "dom"]
+  },
+  "include": ["src", "tests", "**/*.spec.ts"]
+}
